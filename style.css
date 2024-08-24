@@ -23,7 +23,6 @@ a{
     height: 200px;
     padding: 60px 0;
 
-    box-shadow: inset 0 0 10px red;
     display: grid ;
     grid-template-columns: repeat(4,200px);
     gap: 10px;
@@ -85,12 +84,40 @@ a{
     height: 400px;
     background-color: white;
     background-image: url(images/contents-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;/*이미지 위치 오른쪽으로*/
+    border-radius: 40px;
     padding: 50px;
     box-sizing: border-box;
 }
 
-h1{}
+h1{
+    color: orangered;
+}
 
-p{}
+h1 .h11{
+    font-size: 15px;
+    color: #999;
+    vertical-align: super;
+}
+
+
+p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #999;
+    font-family: sans-serif;
+    line-height:30px;
+
+}
+
+p .p11{
+    font-size: 18px;
+    color: white;
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
 
 
