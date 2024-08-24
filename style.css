@@ -4,10 +4,9 @@ body,h1,p{
 }
 
 body{
+    background-image: url(images/bg.png);
 }
-ul,li{
-    list-style-type: none;
-}
+
 a{
     color: unset;
     text-decoration: none;
@@ -15,23 +14,25 @@ a{
 
 .wrapper{
     width: 960px;
-    margin: 30px auto;
+    margin: 0 auto;
 
 }
 
 .header{
     width: 960px;
     height: 200px;
+    padding: 60px 0;
 
     box-shadow: inset 0 0 10px red;
-
+    display: grid ;
+    grid-template-columns: repeat(4,200px);
+    gap: 10px;
 
 
 }
 
 .header .icon{
-    display: inline-block;
-    text-decoration: none;
+    display: inline-block;/* 태생이 inline level 요소인 a요소를 block level로 강제! */
 
     border-radius: 50%;
     color: white;
@@ -40,32 +41,44 @@ a{
     width: 200px;
     height: 200px;
     text-align: center;
+    line-height: 200px;/*✨글자 중앙 배열*/
+
+    
 
 }/* CITRUS JAM 스타일 */
-.jam {
+.header .icon.jam {
     background-image: url(images/logo.png);
     background-size: cover; /* 이미지가 요소에 맞게 크기 조정 */
     background-position: center;
 }
 
 /* lemon 스타일 */
-li.lemon {
-    background-color: yellow;
+.header .icon.lemon { /*✨헤더내부의 아이콘들 중 레몬*/
+    color: yellow;
     box-shadow: inset 0 0 10px green;
 }
 
+.header .icon.lemon:hover{
+    background-image: url(images/lemon.png);
+}
+
 /* orange 스타일 */
-li.orange {
-    background-color: orange;
+.header .icon.orange {/*✨헤더내부의 아이콘들 중 오렌지*/
+    color: orange;
     box-shadow: inset 0 0 10px darkorange;
+}
+.header .icon.orange:hover{
+    background-image: url(images/orange.png);
 }
 
 /* jamong 스타일 */
-li.jamong {
-    background-color: pink;
+.header .icon.jamong {/*✨헤더내부의 아이콘들 중 자몽*/
+    color: orangered;
     box-shadow: inset 0 0 10px red;
 }
-
+.header .icon.jamong:hover{
+    background-image: url(images/jamong.png);
+}
 
 .content{
     width: 960px;
@@ -73,6 +86,7 @@ li.jamong {
     background-color: white;
     background-image: url(images/contents-bg.png);
     padding: 50px;
+    box-sizing: border-box;
 }
 
 h1{}
