@@ -95,7 +95,7 @@ h1{
     color: orangered;
 }
 
-h1 .h11{
+h1 .h11{ /*✨span한 특정 클래스를 강조하고 싶을 때 '요소 .span클래스이름'으로 설정! */
     font-size: 15px;
     color: #999;
     vertical-align: super;
@@ -111,7 +111,7 @@ p{
 
 }
 
-p .p11{
+p .p11{/*✨span한 특정 클래스를 강조하고 싶을 때 '요소 .span클래스이름'으로 설정! */
     font-size: 18px;
     color: white;
     background-color: orangered;
